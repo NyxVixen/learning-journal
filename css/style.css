@@ -1,0 +1,33 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Shadows Into Light', cursive;
+    background-color: grey;
+}
+
+#hero-div {
+    display: grid;
+    border: 2px solid red;
+    grid-template-rows: 1fr 1fr;
+    grid-template: 
+    "title"
+    "avatar";
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    grid-area: title;
+}
+
+#avatar-img {
+    width: 175px;
+    height: 175px;
+    margin: 2.5em auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    grid-area: avatar;
+}
