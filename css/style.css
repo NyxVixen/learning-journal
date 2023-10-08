@@ -1,7 +1,6 @@
 html, 
 body {
     margin: 0;
-    padding: 0;
     font-family: 'Montserrat', sans-serif;
         font-family: 'Quicksand', sans-serif;
         font-family: 'Shadows Into Light', cursive;
@@ -11,10 +10,26 @@ body {
 #hero-div {
     display: grid;
     border: 2px solid red;
-    grid-template-rows: 1fr 1fr;
-    grid-template: 
-    "title"
-    "avatar";
+    
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav {
+    margin: auto;
+}
+
+a {
+    color: yellow;
+    text-transform: uppercase;
+}
+
+li {
+    font-size: 1.25em;
 }
 
 h1 {
@@ -26,7 +41,7 @@ h1 {
 #avatar-img {
     width: 175px;
     height: 175px;
-    margin: 2.5em auto;
+    margin: 1em auto;
     border-radius: 50%;
     border: 5px solid white;
     grid-area: avatar;
