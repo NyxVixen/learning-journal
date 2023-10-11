@@ -35,9 +35,10 @@ body {
 .img-text {
     position: absolute;
     bottom: 0;
-    left: 10;
+    padding: 15px;
     color: white;
     text-shadow: 1px 1px 2px black;
+    line-height: 5px;
 }
 
 .journal-section h1 {
