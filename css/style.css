@@ -2,69 +2,231 @@ html,
 body {
     margin: 0;
     padding: 0;
+    min-width: 280px;
+    color: white;
     font-family: 'Advent Pro', sans-serif;
         font-family: 'Montserrat', sans-serif;
         font-family: 'Quicksand', sans-serif;
-    background-color: grey;
+    background-image: linear-gradient(#111a1f, #212f38, #2a4345);
 }
 
 #hero-div {
     position: relative;
-    border: 1px solid red;
 }
 
 .heading {
     display: inline-flex;
     margin: 0;
+    font-size: 2rem;
     align-items: center;
+    padding: 0 .75rem;
+}
+
+.heading-links {
+    display: flex;
+    margin-right: 0;
+    padding-right: 1rem;
+    font-size: 1.75rem;
+    line-height: 1.5;
+}
+
+.heading-links a:hover {
+    cursor: pointer;
+    color: #d6d6d6;
+    text-shadow: 0 0 3px #a9a9e9;
+    font-weight: 600;
+}
+
+.heading-links a {
+    margin-left: 1.5em;
+    color: white;
 }
 
 #hero-img {
     width: 100%;
 }
 
-#avatar-img {
+#icon {
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin: 1em;
-    border-radius: 50%;
-    border: 1px solid white;   
+    width: 8%;
+    margin: 1em; 
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+.img-text p {
+    font-size: 2.25rem;
 }
 
 .img-text {
     position: absolute;
     bottom: 0;
     padding: 15px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    line-height: 5px;
+    margin: 0;
+    text-shadow: 1px 1px 1px black;
+    line-height: 1;
 }
 
-.journal-section h1 {
-    text-align: center;
+.img-text p:first-of-type {
+    font-size: 1.5rem;
+}
+
+.img-text p,
+.img-text h1 {
+    margin: .25em 0;
 }
 
 div {
     display: grid;
-    /* border: 1px solid black; */
     margin: auto;
+}
+
+.journal-section h2 {
+    font-size: 1.75rem;
+}
+
+.journal-article p {
+    font-size: 1.5rem;
+}
+
+.journal-article p:first-of-type {
+    font-size: 1.25rem;
+}
+
+.read-more {
+    color: #c4dbe6;
+}
+
+.read-more:hover {
+    color: #d6d6d6;
+    text-shadow: 0 0 3px #a9a9e9;
+    font-weight: 600;
 }
 
 .journal-article {
     margin: auto 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
+    padding: 1.5em 0;
 }
 
-/* .journal-section {
-    
-} */
+.journal-section p, 
+.journal-section h2 {
+    margin: .325em 0;
+}
 
-.blog1, .blog2, .blog3, .blog4, .blog5, .blog6 {
+.journal-article:last-of-type {
+    padding-bottom: 0;
+}
+
+footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    font-size: .75rem;
+}
+
+footer p {
     margin: 0;
 }
+
+@media (max-width: 1200px) {
+    .heading h2 {
+        font-size: 2rem;
+    }
+
+    .heading-links a {
+        font-size: 1.25em;
+    }
+
+    h1 {
+        font-size: 1.675em;
+        margin: 0;
+    }
+    
+    .img-text p:first-of-type {
+        font-size: 1rem;
+    }
+
+    .journal-section {
+        border-bottom: 1px solid #ffffff5f;
+    }
+
+    .journal-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .journal-section p {
+        font-size: 1.25rem;
+    }
+
+    .img-text {
+        line-height: 1.15;
+    }
+    
+    .img-text p {
+        font-size: 1.25rem;
+        margin: .375em 0;
+    }
+
+    .heading-links {
+        flex-direction: column;
+        font-size: .895rem;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+
+    .heading-links p {
+        margin: .125em 0;
+        text-decoration: underline;
+        text-decoration-color: #989898;
+    }
+
+    .journal-article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        font-size: .685rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .journal-article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    * {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .heading h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 475px) {
+    * {
+        font-size: .75rem;
+    }
+
+    .heading h2 {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
 
 
